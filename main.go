@@ -11,6 +11,7 @@ import (
 )
 
 const (
+	// Regex to validaete the file name without extension
 	fileExpr = "^[a-zA-Z0-9][a-zA-Z0-9-_.]+$"
 )
 

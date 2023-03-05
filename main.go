@@ -2,6 +2,7 @@ package file
 
 import (
 	"errors"
+	"fmt"
 	"path/filepath"
 	"regexp"
 	"strings"
@@ -25,6 +26,8 @@ func Valid(filename string) error {
 
 	fileExtension := filepath.Ext(filename)
 	filePrefix := strings.TrimSuffix(filename, fileExtension)
+
+	fmt.Printf("This is file name: %v\n", filePrefix)
 
 	match, err := regexp.MatchString(fileExpr, filePrefix)
 	if err != nil {

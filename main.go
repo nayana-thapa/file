@@ -11,11 +11,11 @@ import (
 )
 
 const (
-	// Regex to validaete the file name without extension
+	// Regex to validaete the file name without extension.
 	fileExpr = "^[a-zA-Z0-9][a-zA-Z0-9-_.]+$"
 )
 
-// Valid checks if file has a valid extension or not
+// Valid checks if file has a valid extension or not.
 func Valid(filename string) error {
 
 	fileExts := []string{"txt", "png", "pdf", "jpeg", "jpg", "zip"}

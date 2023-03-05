@@ -1,1 +1,1 @@
-Buidling my own go package
+Buidling my own go package.

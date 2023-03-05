@@ -14,9 +14,10 @@ const (
 	fileExpr = "^[a-zA-Z0-9][a-zA-Z0-9-_.]+$"
 )
 
+// Valid checks if file has a valid extension or not
 func Valid(filename string) error {
 
-	fileExts := []string{"xls", "xlsx", "sds", "eds", "txt", "zip"}
+	fileExts := []string{"txt", "png", "pdf", "jpeg", "jpg", "zip"}
 
 	filename = strings.TrimSpace(filename)
 
